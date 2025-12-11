@@ -1,0 +1,2 @@
+db value selected
+success message Vector DB settings configured successfully.

@@ -1,0 +1,4 @@
+base_url: "https://web.zagent.stage.yavar.ai/"
+driver_path: "C:\\Users\\admin\\Downloads\\chromedriver-win64\\chromedriver.exe"
+email: "ramya@yopmail.com"
+password: "Test@123"

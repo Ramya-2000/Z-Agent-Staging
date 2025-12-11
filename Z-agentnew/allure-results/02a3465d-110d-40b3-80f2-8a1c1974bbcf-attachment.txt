@@ -1,0 +1,5 @@
+TTS/STT is not Elevenlabs → Skipping Remove English
+Random bot lang selected: Malayalam
+Selected text raw → 'Malayalam'
+//button//*[normalize-space(text())='Malayalam']
+Random playback speed options selected: 1x
