@@ -1,0 +1,3 @@
+Extracted OTP: 9237
+Fetched OTP: 9237
+Latency for test 'test_valid_login': 70.14 seconds

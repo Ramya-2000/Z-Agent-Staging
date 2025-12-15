@@ -1,0 +1,2 @@
+delete message Chatbot deleted successfully
+Latency for test 'test_delete_bot_confirm': 14.96 seconds

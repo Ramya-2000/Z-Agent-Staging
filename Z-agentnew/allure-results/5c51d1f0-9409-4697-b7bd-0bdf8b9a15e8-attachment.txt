@@ -1,0 +1,2 @@
+clicked outside
+Latency for test 'test_validation_msg_bot': 46.12 seconds

@@ -1,4 +1,0 @@
-Toggle: <selenium.webdriver.remote.webelement.WebElement (session="5eb6d58ed56d260e476e0bbf059dc585", element="f.C9D27D97CB60E2096D845A2961F422A8.d.3B1019933CB5F7CF03C5660D55C6FF1B.e.582")> → Current State: false
-Clicked toggle <selenium.webdriver.remote.webelement.WebElement (session="5eb6d58ed56d260e476e0bbf059dc585", element="f.C9D27D97CB60E2096D845A2961F422A8.d.3B1019933CB5F7CF03C5660D55C6FF1B.e.582")>
-Toggle: <selenium.webdriver.remote.webelement.WebElement (session="5eb6d58ed56d260e476e0bbf059dc585", element="f.C9D27D97CB60E2096D845A2961F422A8.d.3B1019933CB5F7CF03C5660D55C6FF1B.e.583")> → Current State: false
-Clicked toggle <selenium.webdriver.remote.webelement.WebElement (session="5eb6d58ed56d260e476e0bbf059dc585", element="f.C9D27D97CB60E2096D845A2961F422A8.d.3B1019933CB5F7CF03C5660D55C6FF1B.e.583")>

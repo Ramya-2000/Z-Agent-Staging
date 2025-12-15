@@ -1,2 +1,0 @@
-Clicked: Create Bot
-success message Bot Created Successfully

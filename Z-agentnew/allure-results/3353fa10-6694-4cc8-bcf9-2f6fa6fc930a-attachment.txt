@@ -1,0 +1,1 @@
+Latency for test 'test_general_settings': 5.94 seconds

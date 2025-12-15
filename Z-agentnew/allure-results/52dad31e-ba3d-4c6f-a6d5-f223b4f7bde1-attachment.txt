@@ -1,0 +1,3 @@
+Clicked: Create Bot
+success message Bot Created Successfully
+Latency for test 'test_create_bot_with_valid_name': 34.70 seconds

@@ -1,0 +1,4 @@
+Clicked: Create another Bot
+clicked outside
+Validation Message: Bot name is required
+Latency for test 'test_without_bot_name': 23.74 seconds

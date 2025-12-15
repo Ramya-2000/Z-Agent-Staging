@@ -1,0 +1,1 @@
+Latency for test 'test_valid_bot_personalization': 9.25 seconds

@@ -1,0 +1,5 @@
+Clicked: Create another Bot
+Validation message displayed correctly: Enter a valid bot name
+Validation message displayed correctly: Project type is required
+cancel
+Latency for test 'test_enter_invalid_bot_name': 37.49 seconds

@@ -2,7 +2,7 @@ import os
 import random
 import time
 
-from selenium.webdriver import Keys
+from selenium.webdriver import Keys, ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC,wait
@@ -89,19 +89,21 @@ class BotSettingsPage:
         self.next_button=(By.XPATH, "//button[normalize-space()='Next']")
 
     def validation_msg_bot(self):
-        time.sleep(3)
-        self.driver.find_element(*self.bot_settings_module).click()
-        time.sleep(2)
-        self.driver.find_element(*self.bot_personalization_expand).click()
-        time.sleep(2)
-        bot_name_field=self.driver.find_element(*self.bot_name)
+        wait = WebDriverWait(self.driver, 10)
+        actions = ActionChains(self.driver)
+
+        # Open bot settings
+        wait.until(EC.element_to_be_clickable(self.bot_settings_module)).click()
+        wait.until(EC.element_to_be_clickable(self.bot_personalization_expand)).click()
+
+        # Clear bot name
+        bot_name_field = wait.until(EC.element_to_be_clickable(self.bot_name))
         bot_name_field.click()
         bot_name_field.send_keys(Keys.CONTROL, "a")
         bot_name_field.send_keys(Keys.BACKSPACE)
 
         self.driver.execute_script("arguments[0].blur();", bot_name_field)
         # click empty spot
-        time.sleep(2)
         print("clicked outside")
         wait = WebDriverWait(self.driver, 10)
 
@@ -109,19 +111,18 @@ class BotSettingsPage:
             EC.visibility_of_element_located(self.bot_name_validation)
         )
         assert "Bot name is required" in bot_val_msg.text
-        time.sleep(2)
 
         # self.driver.find_element(*self.tts_stt_model).click()
 
-        self.driver.find_element(*self.remove_english).click()
+        wait.until(EC.element_to_be_clickable(self.remove_english)).click()
         time.sleep(2)
-        bot_lang_field=self.driver.find_element(*self.bot_lang)
+        bot_lang_field = wait.until(EC.element_to_be_clickable(self.bot_lang))
         bot_lang_field.click()
-        time.sleep(1)
+        bot_lang_field.click()
 
-        self.driver.execute_script("arguments[0].blur();", bot_lang_field)
-        # click empty spot
         time.sleep(2)
+
+        bot_lang_field.send_keys(Keys.TAB)
         print("clicked outside of bot language")
         wait = WebDriverWait(self.driver, 10)
 
@@ -129,12 +130,11 @@ class BotSettingsPage:
             EC.visibility_of_element_located(self.bot_lang_validation)
         )
         assert "At least one language must be selected" in bot_lang_val_msg.text
-        time.sleep(4)
-        self.driver.refresh()
-        time.sleep(2)
+        time.sleep(3)
+        self.driver.navigate().refresh()
+        time.sleep(3)
 
     def valid_bot_personalization(self):
-        time.sleep(4)
         self.driver.find_element(*self.bot_personalization_expand).click()
         time.sleep(2)
         bot_name_value = bot_settings_bot_name()  # <-- call the function

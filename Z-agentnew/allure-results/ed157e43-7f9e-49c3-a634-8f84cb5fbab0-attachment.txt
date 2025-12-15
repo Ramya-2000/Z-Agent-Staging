@@ -1,0 +1,2 @@
+Edit Validation Message: Bot name is required
+Latency for test 'test_edit_bot_name_validation': 31.52 seconds

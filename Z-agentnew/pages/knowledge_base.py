@@ -84,14 +84,20 @@ class KnowledgeBasePage:
 
     @allure.step("Click on File Upload button")
     def file_upload(self):
-        time.sleep(5)
-        next_btn=self.driver.find_element(*self.next_btn)
+        wait = WebDriverWait(self.driver, 15)
+
+        # Wait until button is visible
+        next_btn = wait.until(EC.visibility_of_element_located(self.next_btn))
+
+        # Check enabled/disabled
         if next_btn.is_enabled():
             print("Next button is enabled")
         else:
             print("Next button is disabled")
+
+        # Wait until clickable
+        next_btn = wait.until(EC.element_to_be_clickable(self.next_btn))
         next_btn.click()
-        time.sleep(3)
         self.driver.find_element(*self.file_upload_document).click()
         time.sleep(3)
 
@@ -304,7 +310,7 @@ class KnowledgeBasePage:
         ingest_button.click()
         time.sleep(5)
 
-        ingesting_message= WebDriverWait(self.driver, 20).until(
+        ingesting_message= WebDriverWait(self.driver, 10).until(
             EC.visibility_of_element_located(self.ingesting_msg)
         )
         print("success message", ingesting_message.text)

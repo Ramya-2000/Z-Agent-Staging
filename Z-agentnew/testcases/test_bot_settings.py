@@ -30,8 +30,9 @@ class TestBotSettingsPage:
     @allure.story("Validation Messages")
     @allure.description("Verify validation messages appear correctly for bot settings (if implemented).")
     @allure.severity(allure.severity_level.MINOR)
-    @pytest.mark.dependency(depends=["knowledge_base_done"], scope="session")
-    @pytest.mark.dependency(name="bot_settings_done",scope="session")
+    # @pytest.mark.dependency(depends=["knowledge_base_done"], scope="session")
+    # @pytest.mark.dependency(name="bot_settings_done",scope="session")
+    @pytest.mark.dependency(name="validation_msg_done", depends=["knowledge_base_done"], scope="session")
     @pytest.mark.order(24)
     def test_validation_msg_bot(self, driver):
         bot_settings_page = BotSettingsPage(driver)
@@ -45,7 +46,8 @@ class TestBotSettingsPage:
     @allure.story("Bot Personalization")
     @allure.description("Verify that bot personalization settings can be applied correctly.")
     @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.dependency(depends=["knowledge_base_done"],scope="session")
+    # @pytest.mark.dependency(depends=["knowledge_base_done"],scope="session")
+    @pytest.mark.dependency(depends=["validation_msg_done"], scope="session")
     @pytest.mark.order(25)
     def test_valid_bot_personalization(self, driver):
         bot_settings_page = BotSettingsPage(driver)
@@ -60,7 +62,8 @@ class TestBotSettingsPage:
     @allure.story("Theme Settings")
     @allure.description("Verify that theme settings are applied successfully.")
     @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.dependency(depends=["knowledge_base_done"],scope="session")
+    # @pytest.mark.dependency(depends=["knowledge_base_done"],scope="session")
+    @pytest.mark.dependency(depends=["validation_msg_done"], scope="session")
     @pytest.mark.order(26)
     def test_theme_settings(self, driver):
         bot_settings_page = BotSettingsPage(driver)

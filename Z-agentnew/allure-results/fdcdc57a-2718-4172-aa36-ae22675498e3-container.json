@@ -1,0 +1,1 @@
+{"uuid": "105704bc-a606-468e-bfa6-8a75468ac933", "children": ["4e70fe54-31db-44ab-87bb-76701046a590"], "befores": [{"name": "measure_latency", "status": "passed", "start": 1765522987466, "stop": 1765522987466}], "afters": [{"name": "measure_latency::0", "status": "passed", "start": 1765523048233, "stop": 1765523048234}], "start": 1765522987466, "stop": 1765523048234}

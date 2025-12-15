@@ -1,0 +1,2 @@
+db value selected
+Latency for test 'test_valid_vector_db_configuration': 46.04 seconds

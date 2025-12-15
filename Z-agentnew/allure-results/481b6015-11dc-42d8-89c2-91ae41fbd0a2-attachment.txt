@@ -1,0 +1,1 @@
+Latency for test 'test_direct_link': 5.10 seconds

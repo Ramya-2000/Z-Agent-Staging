@@ -31,6 +31,8 @@
 #
 #     # ✅ Quit browser after test class
 #     driver.quit()
+import time
+
 import allure
 import pytest
 from selenium import webdriver
@@ -53,6 +55,7 @@ def driver():
         "profile.password_manager_leak_detection": False
     }
     chrome_options.add_experimental_option("prefs", prefs)
+
 
     service = Service()  # Make sure chromedriver is in PATH
     driver = webdriver.Chrome(service=service, options=chrome_options)
@@ -93,3 +96,15 @@ def pytest_runtest_makereport(item):
                     )
             except Exception as e:
                 print(f"⚠ Error taking success screenshot: {e}")
+
+@pytest.fixture(autouse=True)
+def measure_latency(request):
+    """
+    Fixture to measure and print latency for each test case automatically.
+    autouse=True ensures it runs for all tests.
+    """
+    start_time = time.time()
+    yield
+    end_time = time.time()
+    latency = end_time - start_time
+    print(f"Latency for test '{request.node.name}': {latency:.2f} seconds")

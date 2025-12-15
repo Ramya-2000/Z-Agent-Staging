@@ -1,4 +1,0 @@
-db value selecteddddddddddddd
-Validation Message: Top_k is required
-Validation Message: Chunk size is required
-Validation Message: Chunk overlap is required

@@ -1,0 +1,6 @@
+Clicked: Initial Add Website
+success_injection <selenium.webdriver.remote.webelement.WebElement (session="bec8f70d41629514ebb8c23ccd63aed1", element="f.4A27C08594E281990923AABC7137BE5B.d.78D9A7159478E6814E722D7E7708DF5F.e.382")>
+Unchecked: <selenium.webdriver.remote.webelement.WebElement (session="bec8f70d41629514ebb8c23ccd63aed1", element="f.4A27C08594E281990923AABC7137BE5B.d.78D9A7159478E6814E722D7E7708DF5F.e.379")>
+Unchecked: <selenium.webdriver.remote.webelement.WebElement (session="bec8f70d41629514ebb8c23ccd63aed1", element="f.4A27C08594E281990923AABC7137BE5B.d.78D9A7159478E6814E722D7E7708DF5F.e.373")>
+success message Website ingestion started!
+Latency for test 'test_web_scrapping_logic': 61.91 seconds

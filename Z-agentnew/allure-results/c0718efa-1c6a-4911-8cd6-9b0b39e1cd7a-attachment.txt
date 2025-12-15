@@ -1,0 +1,2 @@
+Clicked: Create Bot
+Latency for test 'test_lets_get_started_button': 32.67 seconds

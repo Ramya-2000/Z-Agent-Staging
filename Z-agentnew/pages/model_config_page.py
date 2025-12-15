@@ -101,6 +101,7 @@ class ModelConfigPage:
         time.sleep(3)
         self.driver.find_element(*self.llm_save_btn).click()
 
+
     def valid_llm_details(self):
         self.driver.refresh()
         time.sleep(2)
@@ -119,7 +120,7 @@ class ModelConfigPage:
         self.driver.find_element(*self.llm_model_value).click()
         time.sleep(3)
 
-        self.driver.find_element(*self.llm_enter_api_key).send_keys("AIzaSyAcDz50H--5MQ3qcVLql89nKbTJYysiVug")
+        self.driver.find_element(*self.llm_enter_api_key).send_keys("API-KEY")
 
         self.driver.find_element(*self.embedding_provider).click()
         time.sleep(2)
@@ -129,7 +130,7 @@ class ModelConfigPage:
         time.sleep(5)
         self.driver.find_element(*self.embedding_model_value).click()
 
-        self.driver.find_element(*self.embedding_enter_api_key).send_keys("AIzaSyAcDz50H--5MQ3qcVLql89nKbTJYysiVug")
+        self.driver.find_element(*self.embedding_enter_api_key).send_keys("API-KEY")
         time.sleep(2)
         self.driver.find_element(*self.llm_save_btn).click()
         wait = WebDriverWait(self.driver, 10)

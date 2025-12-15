@@ -1,0 +1,19 @@
+Selected random image: C:\Users\admin\PycharmProjects\ZagentStage\Z-agentnew\images\images.jpg
+Image uploaded successfully!
+Selected random color header bg: #a319c6
+Applying #c3cb12 to ('css selector', "input[name='chat_window_colors.header_text']")
+Applying #a319c6 to ('css selector', "input[name='chat_window_colors.ai_message_background']")
+Applying #ffffff to ('css selector', "input[name='chat_window_colors.ai_message_text']")
+Applying #a319c6 to ('css selector', "input[name='chat_window_colors.user_message_background']")
+Applying #aa1919 to ('css selector', "input[name='chat_window_colors.user_message_text']")
+Applying #000000 to ('css selector', "input[name='chat_window_colors.call_button_background']")
+Applying #a88e88 to ('css selector', "input[name='chat_window_colors.call_button_text']")
+Applying #339fc0 to ('css selector', "input[name='chat_window_colors.send_button_background']")
+Applying #f8deff to ('css selector', "input[name='chat_window_colors.send_button_text']")
+Applying #ebe5fd to ('css selector', "input[name='landing_page_colors.thinking_message_background']")
+Applying #339fc0 to ('css selector', "input[name='landing_page_colors.thinking_message_text']")
+Applying #ebe5fd to ('css selector', "input[name='landing_page_colors.next_button_left']")
+Applying #f8deff to ('css selector', "input[name='landing_page_colors.next_button_right']")
+Applying #a88e88 to ('css selector', "input[name='landing_page_colors.next_button_text']")
+Applying #30c45c to ('css selector', "input[name='landing_page_colors.underline_color']")
+Latency for test 'test_theme_settings': 232.75 seconds

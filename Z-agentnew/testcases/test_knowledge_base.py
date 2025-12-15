@@ -33,11 +33,11 @@ class TestKnowledgeBase:
     # --------------------------
     # 1. File Upload Test
     # --------------------------
-    @allure.feature("Knowledge Base")
-    @allure.story("File Upload")
-    @allure.description("Upload a single file to the knowledge base and verify it appears correctly.")
-    @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.dependency(depends=["model_config_done"],scope="session")
+    # @allure.feature("Knowledge Base")
+    # @allure.story("File Upload")
+    # @allure.description("Upload a single file to the knowledge base and verify it appears correctly.")
+    # @allure.severity(allure.severity_level.CRITICAL)
+    # @pytest.mark.dependency(depends=["model_config_done"],scope="session")
     # @pytest.mark.dependency(name="knowledge_base_done",scope="session")
     # @pytest.mark.order(16)
     # def test_file_upload(self, driver):

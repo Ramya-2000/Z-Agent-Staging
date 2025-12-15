@@ -1,0 +1,2 @@
+cancel clickedddddd
+Latency for test 'test_cancel_button': 4.76 seconds

@@ -1,6 +1,0 @@
-Clicked: Initial Add Website
-success_injection <selenium.webdriver.remote.webelement.WebElement (session="5eb6d58ed56d260e476e0bbf059dc585", element="f.C9D27D97CB60E2096D845A2961F422A8.d.3B1019933CB5F7CF03C5660D55C6FF1B.e.329")>
-Unchecked: <selenium.webdriver.remote.webelement.WebElement (session="5eb6d58ed56d260e476e0bbf059dc585", element="f.C9D27D97CB60E2096D845A2961F422A8.d.3B1019933CB5F7CF03C5660D55C6FF1B.e.323")>
-Unchecked: <selenium.webdriver.remote.webelement.WebElement (session="5eb6d58ed56d260e476e0bbf059dc585", element="f.C9D27D97CB60E2096D845A2961F422A8.d.3B1019933CB5F7CF03C5660D55C6FF1B.e.324")>
-Unchecked: <selenium.webdriver.remote.webelement.WebElement (session="5eb6d58ed56d260e476e0bbf059dc585", element="f.C9D27D97CB60E2096D845A2961F422A8.d.3B1019933CB5F7CF03C5660D55C6FF1B.e.317")>
-success message Website ingestion started!

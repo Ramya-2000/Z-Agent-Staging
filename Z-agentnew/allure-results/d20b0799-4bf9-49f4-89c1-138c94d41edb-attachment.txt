@@ -1,0 +1,2 @@
+Bot Updated Successfully
+Latency for test 'test_update_bot_name': 18.70 seconds

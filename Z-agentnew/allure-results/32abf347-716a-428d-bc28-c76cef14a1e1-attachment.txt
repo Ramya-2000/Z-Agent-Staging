@@ -1,0 +1,1 @@
+Latency for test 'test_delete_bot_cancel': 13.75 seconds

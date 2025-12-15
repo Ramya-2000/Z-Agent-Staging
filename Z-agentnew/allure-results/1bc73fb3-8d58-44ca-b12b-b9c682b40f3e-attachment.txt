@@ -1,0 +1,5 @@
+Toggle: <selenium.webdriver.remote.webelement.WebElement (session="bec8f70d41629514ebb8c23ccd63aed1", element="f.4A27C08594E281990923AABC7137BE5B.d.78D9A7159478E6814E722D7E7708DF5F.e.669")> → Current State: false
+Clicked toggle <selenium.webdriver.remote.webelement.WebElement (session="bec8f70d41629514ebb8c23ccd63aed1", element="f.4A27C08594E281990923AABC7137BE5B.d.78D9A7159478E6814E722D7E7708DF5F.e.669")>
+Toggle: <selenium.webdriver.remote.webelement.WebElement (session="bec8f70d41629514ebb8c23ccd63aed1", element="f.4A27C08594E281990923AABC7137BE5B.d.78D9A7159478E6814E722D7E7708DF5F.e.670")> → Current State: false
+Clicked toggle <selenium.webdriver.remote.webelement.WebElement (session="bec8f70d41629514ebb8c23ccd63aed1", element="f.4A27C08594E281990923AABC7137BE5B.d.78D9A7159478E6814E722D7E7708DF5F.e.670")>
+Latency for test 'test_tts_settings': 42.50 seconds
